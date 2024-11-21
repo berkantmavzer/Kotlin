@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/numberText1"
+        android:layout_width="311dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="76dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/numberText2"
+        android:layout_width="312dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="156dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnTopla"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="89dp"
+        android:onClick="topla"
+        android:text="+"
+        app:layout_constraintEnd_toEndOf="@+id/btnCarp"
+        app:layout_constraintStart_toStartOf="@+id/btnCarp"
+        app:layout_constraintTop_toBottomOf="@+id/sonucText" />
+
+    <Button
+        android:id="@+id/btnCikar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="cikar"
+        android:text="-"
+        app:layout_constraintBottom_toBottomOf="@+id/btnTopla"
+        app:layout_constraintEnd_toEndOf="@+id/btnBol"
+        app:layout_constraintStart_toStartOf="@+id/btnBol"
+        app:layout_constraintTop_toTopOf="@+id/btnTopla" />
+
+    <Button
+        android:id="@+id/btnBol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="61dp"
+        android:onClick="bol"
+        android:text="/"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCikar" />
+
+    <Button
+        android:id="@+id/btnCarp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="71dp"
+        android:layout_marginTop="56dp"
+        android:onClick="carp"
+        android:text="*"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnTopla" />
+
+    <TextView
+        android:id="@+id/sonucText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Sonuç:"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/numberText2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
